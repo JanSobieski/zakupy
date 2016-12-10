@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+<meta charset="UTF-8"/> 
+
+<title>Lista zakupów</title>
+
+<% String hidden = request.getParameter("inputName"); %>
+<input type="hidden" id="thisField" name="inputName" value="<%=hidden %>">
+
+
+<script id='sap-ui-bootstrap'
+    src='../resources/sap-ui-core.js'
+    data-sap-ui-theme='sap_bluecrystal'
+    data-sap-ui-libs='sap.m, sap.ui.commons, sap.ui.table'
+    data-sap-ui-compatVersion='edge'
+		data-sap-ui-resourceroots='{
+                "ui5": "./"
+            }'    
+    >
+</script>
+
+<script>
+		sap.ui.localResources("ui5");
+		
+		var app = new sap.m.App("myApp",{initialPage:"idApp1"});  
+		var view = sap.ui.view({id:"idApp1", type:sap.ui.core.mvc.ViewType.JS, viewName:"ui5.Main"});
+		
+    app.addPage(view);  
+    app.placeAt("content");
+
+
+
+    //sap.ui.getCore().attachInit(function () {
+      //  new sap.ui.view({viewName: "sap.ui.demo.wt.Main"
+        //}).placeAt("content");
+//    });
+</script>
+</head>
+<body class='sapUiBody'>
+    <div id='content'></div>
+</body>
+</html>
