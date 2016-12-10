@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Form Page</title>
+</head>
+<body>
+<h1>Zakypy - store list</h1>
+
+http://localhost:8080/zakupy-ws/jaxrs/zakupy/get-list
+ 
+    <form action="jaxrs/zakupy-test/store-list" method="post" enctype="multipart/form-data">
+	 
+       <p>
+       <table>
+       <tr><td>First name</td><td><input type="text" name="first_name"></td></tr>
+       <tr><td>Last name</td><td><input type="text" name="last_name"></td></tr>
+       <tr><td>Mail</td><td><input type="text" name="mail"></td></tr>
+       <tr><td>Stanowisko</td><td><input type="text" name="job_position"></td></tr>
+       <tr><td>Dodatkowe informacje</td><td><textarea name="additional_info" cols="30" rows="5"></textarea></td></tr>
+       <table>
+						
+       
+       <br>
+        <fieldset>
+						<label class="bolded">Lokalizacja</label>
+						<div class="form-checks">
+														<span>
+									<input type="checkbox" id="Warszawa-0" name="city" data-filter="city" value="Warszawa" />
+									<label for="Warszawa-0">Warszawa</label>
+								</span>
+																<span>
+									<input type="checkbox" id="Poznań-1" name="city" data-filter="city" value="Poznań" />
+									<label for="Poznań-1">Poznań</label>
+								</span>
+																<span>
+									<input type="checkbox" id="Kraków-2" name="city" data-filter="city" value="Warszawa, Poznań, Wrocław" />
+									<label for="Kraków-2">Warszawa, Poznań, Wrocław</label>
+								</span>
+																<span>
+									<input type="checkbox" id="Kraków-2" name="city" data-filter="city" value="Kraków" />
+									<label for="Kraków-2">Kraków</label>
+								</span>
+																<span>
+									<input type="checkbox" id="Kraków-2" name="city" data-filter="city" value="Kraków, Poznań, Wrocław" />
+									<label for="Kraków-2">Kraków, Poznań, Wrocław</label>
+								</span>
+																<span>
+									<input type="checkbox" id="Wrocław-3" name="city" data-filter="city" value="Wrocław" />
+									<label for="Wrocław-3">Wrocław</label>
+								</span>
+																<span>
+									<input type="checkbox" id="Łódź-4" name="city" data-filter="city" value="Łódź" />
+									<label for="Łódź-4">Łódź</label>
+								</span>
+														</div>
+					</fieldset>       
+       
+       <br>
+        Select a file : <input type="file" name="file" size="50" />
+       </p>
+ 
+       <input type="submit" value="Upload It" />
+    </form>
+	 
+</body>
+</html>
