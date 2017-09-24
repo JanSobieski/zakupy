@@ -4,7 +4,7 @@
 
 <hr />
 
-<h3>Lista zakupów t1</h3>
+<h3>Lista zakupów</h3>
 
 <h3>Zakupy - Logowanie</h3>
 
